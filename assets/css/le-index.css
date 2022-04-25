@@ -1,12 +1,40 @@
 .iconfont {
     margin-right: 5px;
 }
-#slide-top a{
+.userinfo1 {
     height: 70px;
     line-height: 70px;
     text-align: center;
+    font-size: 12px;
+    user-select: none;
+    border-bottom: 1px solid black;
+
+}
+.userinfo2 {
+    float: left;
+    margin-right: 10px;
 }
 .layui-icon {
     margin-left: 15px;
     margin-right: 5px;
+}
+a {
+    transition: none!important;
+}
+.text-avater {
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    color: #000;
+    font-size: 18px;
+    margin-right: 5px;
+}
+#infoname {
+    margin-left: 10px;
 }

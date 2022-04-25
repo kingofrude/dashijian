@@ -24,7 +24,8 @@ $(function(){
         ,password: [
           /^[\S]{6,12}$/
           ,'密码必须6到12位，且不能出现空格'
-        ] 
+        ],
+        uname: [/^[a-zA-Z0-9]{1,10}$/, '用户名必须是1-10位字母和数字'],
       });
       $('#form-login').on('submit', function(e){
         e.preventDefault();
@@ -41,9 +42,8 @@ $(function(){
               return layer.msg('登录失败');
             }
             layer.msg('登录成功');
-            console.log(res);
             localStorage.setItem('token', res.token)
-            // location.href = '/le-index.html'
+            location.href = './le-index.html'
           }
         })
       })
